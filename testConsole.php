@@ -24,8 +24,7 @@
     <![endif]-->
 
   </head>
-
-  <body>
+<body>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -64,13 +63,20 @@
       </div>
     </div>
 
+
     <div class="container">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+      <div style="margin: 0 0 -50px 20px"><img src="pics/max.png"> <img src="pics/min.png" > <img src="pics/close.png"></div>
+      <div class="terminal">
+        <!--<textarea id="terminalTB" readonly >
+        </textarea>-->
+        <div id="output">
+		$ Hi, Use this very awesome console to navigate pages. E.g type "index" without quotes to go to the index page.
+		But first, type your name: </br>
+        </div>
+    </br>
+        <input type="text" value="$ " id="terminalInput"     maxlength= "100" />
       </div>
 
       <!-- Example row of columns -->
@@ -100,7 +106,9 @@
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
+
+
+ <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
@@ -117,5 +125,6 @@
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
 
+     <script src="js/custom.js"></script>
   </body>
 </html>

@@ -1,18 +1,22 @@
 $(document).ready(function(){
 	$('#terminalInput').keypress(function(e){
 		if(e.keyCode==13){
-			var newOut=$('#output').val()+ $('#terminalInput').val()+"</br>";
-			var command=$('#terminalInput').val();
-			$('#terminalInput').val("$ ");
+		var command=$('#terminalInput').val();
+			command=command.substring(command.indexOf(" ")+1, command.length);
+		var newOut="=> "+$('#output').val()+ command+"</br>";
+		
 			$('#output').append( newOut );
 		}
 		command=command.toLowerCase();
-		command=command.substring(command.indexOf(" ")+1, command.length);
 		command=command.replace(/ /g, "_");
 		if(isPage(command)){
-			window.location="http://localhost:8080/cs_page/sites/index.php";
+			window.location="/cs_page/index.php";
 		}
-
+		else{
+			 newOut=$('#output').val()+"Hello, "+ $('#terminalInput').val()+"</br>";
+			 $('#output').append( newOut );
+		}
+		$('#terminalInput').val("$ ");
 	});
 	function isPage(page){
 		var pages=["project_course", "index"]
