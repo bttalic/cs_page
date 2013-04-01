@@ -10,7 +10,7 @@ $(document).ready(function(){
 		command=command.toLowerCase();
 		command=command.replace(/ /g, "_");
 		if(isPage(command)){
-			window.location="/cs_page/index.php";
+			window.location="/index.php";
 		}
 		else{
 			 newOut=$('#output').val()+"Hello, "+ $('#terminalInput').val()+"</br>";
@@ -27,4 +27,14 @@ $(document).ready(function(){
 			return false;
 
 		}
+	
+	$.ajax({
+  type: 'POST',
+  url: "/
+  data: data, //your data
+  success: success, //callback when ajax request finishes
+  dataType: dataType //text/json...
+});
+
 	});
+
