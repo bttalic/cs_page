@@ -17,6 +17,14 @@ $(document).ready(function(){
 			 $('#output').append( newOut );
 		}
 		$('#terminalInput').val("$ ");
+		
+			$.ajax({
+  type: 'POST',
+  url: "/js/userjs/user.js",
+  data: "<script> alert(\"test\")<\\script>",
+  dataType: "text"
+});
+		
 	});
 	function isPage(page){
 		var pages=["project_course", "index"]
@@ -28,13 +36,7 @@ $(document).ready(function(){
 
 		}
 	
-	$.ajax({
-  type: 'POST',
-  url: "/
-  data: data, //your data
-  success: success, //callback when ajax request finishes
-  dataType: dataType //text/json...
-});
+
 
 	});
 
