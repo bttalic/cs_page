@@ -1,0 +1,1 @@
+function add(){ document.getElementById("result").innerHTML=1+2;return 1+2 }
