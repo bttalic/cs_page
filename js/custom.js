@@ -20,29 +20,6 @@ $(document).ready(function(){
 		}
 		$('#terminalInput').val("$ ");
   
-  var data = command.toString();
-    var url = "/cs_page/js/userjs/user.js";//your url to the server side file that will receive the data.
-    /*
-	
-	var xmlhttp;
-if(window.XMLHttpRequest){
-
-	xmlhttp=new XMLHttpRequest();
-
-}else{
-
-	xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
-
-}
-
-xmlhttp.open('POST', '/cs_page/test.php', true);
-xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-xmlhttp.send("script="+data);
-
-$.getScript("js/user.js", function(){
- document.getElementById("myDiv").innerHTML= add();
-});
-*/
 	}
 });
 		
