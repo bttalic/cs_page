@@ -20,7 +20,7 @@ include("includes/includes.php");
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#"><img src="pics/logo2.png" class="thumbnail">CS @ IUS</a>
+            <a class="brand" href="#"><img src="pics/icons/logo2.png" class="thumbnail">CS @ IUS</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
@@ -53,7 +53,7 @@ include("includes/includes.php");
       <div class="container">
 
         <!-- Main hero unit for a primary marketing message or call to action -->
-        <div style="margin: 0 0 -50px 20px"><img src="pics/max.png"> <img src="pics/min.png" > <img src="pics/close.png"></div>
+        <div style="margin: 0 0 -50px 20px"><img src="pics/icons/max.png"> <img src="pics/icons/min.png" > <img src="pics/icons/close.png"></div>
         <div class="terminal">
         <!--<textarea id="terminalTB" readonly >
       </textarea>-->

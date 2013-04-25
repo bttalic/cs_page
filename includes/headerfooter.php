@@ -4,20 +4,21 @@
 function headerCode(){
 
   echo <<<headerHTML
-  <div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
+  <div class="navbar navbar-fixed-top navbar-inverse" '>
+  <div class="navbar-inner" id="mainnavbar">
   <div class="container">
   <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
   </button>
-  <a class="brand" href="#"><img src="pics/logo2.png" class="thumbnail">CS @ IUS</a>
-  <div class="nav-collapse collapse">
-  <ul class="nav">
-  <li class="active"><a href="#">Home</a></li>
+  <a class="brand" href="./index.php"><img src="pics/icons/logo2.png" class="thumbnail">CS @ IUS</a>
+  <div class="nav-collapse collapse nav pull-right">
+  <ul class="nav" >
+  <li class="active "><a href="./index.php">Home</a></li>
   <li><a href="#about">About</a></li>
   <li><a href="#contact">Contact</a></li>
+   <li><a href="./signin_register.php">Sign in/Sign up</a></li>
   <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
   <ul class="dropdown-menu">
@@ -31,11 +32,6 @@ function headerCode(){
   </ul>
   </li>
   </ul>
-  <form class="navbar-form pull-right">
-  <input class="span2" type="text" placeholder="Email">
-  <input class="span2" type="password" placeholder="Password">
-  <button type="submit" class="btn">Sign in</button>
-  </form>
   </div><!--/.nav-collapse -->
   </div>
   </div>
@@ -46,8 +42,8 @@ headerHTML;
 function footerCode(){
   echo <<<footerHTML
   <footer>
-        <p>&copy; b.ttalic&mirza-se 2013</p>
-      </footer>
+        <p>&copy; cs@ius 2013</p>
+  </footer>
 footerHTML;
 }
 
